@@ -1,0 +1,48 @@
+<html>  
+    
+<head>
+    <title>
+    study
+    </title>
+    <link rel="stylesheet" href="../css/index.css">
+</head>
+<body>   
+<p>计算一个数的平方</p>   
+<a onclick='javascript:myFunction()'><button>请点击输入数字</button></a>  
+<br>
+<a onclick='javascript:myFunction2()'><button>点击打开新窗口</button></a>  
+<br>
+<p id="change">被改变颜色的一句话</p>
+<a onclick='javascript:myFunction3()'><button>改变页面参数</button></a> 
+<a onclick='javascript:myFunction4()'><button>复位</button></a> 
+<script>   
+function myFunction(){   
+    var a =prompt("输入账号：",""); 
+    
+    alert(a*a);
+}   
+function myFunction2(){   
+    window.open("homepage.html","_blank");
+}   
+function changecolorgreen(){
+    change.style.color="green";
+    }
+function changecolorred(){
+    change.style.color="red";
+    }
+
+function delay(){
+    setTimeout("changecolorgreen()",300);
+   setTimeout(changecolorred(),300);
+
+}
+function myFunction3(){   
+   //setInterval("delay()",300);
+   
+}
+function myFunction4(){   
+    change.style.color="blue";
+}    
+</script>   
+</body>   
+</html> 
